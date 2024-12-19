@@ -1,0 +1,444 @@
+/*
+Author: Devin Ledesma
+Date: 11/30/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+
+/* Style for body and images */
+body {
+  background-color: #E497DE;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for mobile viewport */
+/* Style rules for mobile view and hide tab-desk class */
+.mobile {
+  display: block;
+  padding: 5%;
+}
+
+.tab-desk {
+  display: none;
+}
+
+/* Styles rules for header area */
+.container {
+  position: relative;
+}
+
+.container h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3em;
+}
+
+aside img {
+  border-radius: 50%;
+  margin: auto;
+}
+
+.mobile h1 {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 2%;
+  color: #FFFFFF;
+  text-shadow: 3px 5px 5px #721D60;
+}
+
+.mobile h3 {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  font-size: 1.25em;
+  color: #FFFFFF;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #721D60;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.5em;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+}
+
+nav li:first-child {
+  border-top: #b2e0f3 solid 3px;
+  border-bottom: #b2e0f3 solid 3px;
+}
+
+nav li:nth-child(2) {
+  border-bottom: #b2e0f3 solid 3px;
+}
+
+nav li:nth-child(3) {
+  border-bottom: #b2e0f3 solid 3px;
+}
+
+
+nav li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/* Style rules for main content */
+main .columns:nth-child(odd) {
+  background-color: #F8C5F0;
+  padding: 4%;
+}
+
+main .columns:nth-child(even) {
+  background-color: #d2bdfb;
+  padding: 4%;
+}
+
+main img {
+  border-radius: 3%;
+}
+
+main h2 {
+  text-align: center;
+  font-family: "Sniglet", system-ui;
+  color: #FFFFFF;
+  text-shadow: -2px 3px 5px #3c0a4a;
+  font-size: 2em;
+}
+
+main h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  text-shadow: -2px 3px 5px #3c0a4a;
+}
+
+main p {
+  font-size: 1.4em;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.35em;
+  color: #2c0314;
+}
+
+main ul {
+  color: #832350;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+main ul li {
+  font-size: 1.25em;
+  font-family: "Sniglet", system-ui;
+  line-height: 1.5em;
+  color: #832350;
+  font-weight: lighter;
+}
+
+span {
+  color: #2c0314;
+}
+
+.bottom-spacing {
+  margin-bottom: 4%;
+}
+
+/* Style rules for class btn */
+.pristene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3c0a4a;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: #3c0a4a;
+  margin-top: 4%;
+}
+
+.pristene a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.pristene:hover {
+  background-color: #FFFFFF;
+}
+
+.pristene a:hover {
+  color: #3c0a4a;
+}
+
+/* Style rules to show mobile-tablet*/
+.mobile-tablet {
+  display: block;
+}
+
+.mobile-tablet p {
+    margin-left: 4%
+}
+
+/* Style rules for table*/
+.hide-table {
+  display: none;
+}
+
+/* Style rules for image gallery */
+figure {
+  padding: 3%;
+  background-color: #721D60;
+  border-radius: 4%;
+}
+
+figure img {
+  margin: 0 auto;
+}
+figcaption {
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 2%;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 1em;
+  background-color: #721D60;
+  color: #FFFFFF;
+  padding: 2% 0;
+  border-top: 3px solid #b2e0f3;
+}
+
+/* Media Query for tablet viewport */
+@media screen and (min-width: 620px), print {
+  /* Tablet Viewport: show tab-desk, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for header */
+  .container h3 {
+    width: 100%;
+    font-size: 3em;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    color: #FFFFFF;
+    text-shadow: 4px 6px 8px #721D60;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0 2em;
+  }
+
+  /* Style the borders separately so they dont overlap each other */
+  nav li:first-child { /* pseudo class to control the first li element */
+    border-top: none;
+    border-bottom: none;
+  }
+
+  nav li:nth-child(2) { /* pseudo class to control the first middle element */
+    border-bottom: none;
+  }
+
+  nav li:nth-child(3) { /* pseudo class to control the last li element */
+    border-bottom: none;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+
+  /* Tablet Viewport: Style rules for main content */
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 3%;
+  }
+
+  /* Style rules for grid-gallery */
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-gallery h2 {
+    grid-column: 1 / span 2;
+  }
+
+  figcaption {
+    font-size: 1.75em;
+  }
+}
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 1000px), print {
+  /* Desktop Viewport: Style rules for nav area */
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li:hover {
+    background-color: #FFFFFF;
+    opacity: 80%;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color: #3c0a4a;
+  }
+
+  nav li a:visited { /* pseudo class to change link after it has been use */
+    color: #b2e0f3;
+  }
+
+  /* Desktop Viewport: Style rules for header content */
+   .container h3 {
+    font-size: 6em;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  main h2 {
+    font-size: 3em;
+  }
+
+  main p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  .columns li {
+    font-size: 1.5em;
+  }
+
+  .row {
+    width: 100%;
+    grid-column: 1 / span 2;
+    margin: 4% auto 0;
+  }
+
+  /* Style rules for table */
+  .hide-table {
+    display: block;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #3c0a4a;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 1%;
+    background-color: #721D60;
+    color: #FFFFFF;
+  }
+
+  th, td {
+    border: 1px solid #3c0a4a;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #3c0a4a;
+    color: #FFFFFF;
+    font-size: 1.25em;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(240, 238, 248, 0.92);
+  }
+
+  tr:nth-child(odd) {
+    background-color: #FFFFFF;
+  }
+
+  /* Style rules to hide mobile-tablet*/
+  .mobile-tablet {
+      display: none;
+  }
+
+  /* Style rules for grid-gallery */
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  figure:hover {
+    box-shadow: 6px 6px 10px #2c0314;
+  }
+
+  figure img:hover {
+    border: 5px solid #b2e0f3;
+  }
+
+  .grid-gallery h2 {
+    grid-column: 1 / span 3;
+  }
+
+  figcaption {
+    font-size: 1.3em;
+  }
+
+  /* Desktop Viewport: Style rules for footer content */
+  footer p {
+    font-size: 1.3em;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+  body {
+    background: linear-gradient(#cba5c7, #b2e0f3);
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Print*/
+@media print {
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+}
